@@ -1,14 +1,12 @@
 import { Outlet } from "react-router-dom";
 
+import Navbar from "../components/Navbar/Navbar";
+
 const RootPage = () => {
   return (
     <div className="RootPageContainer">
       {/* nav container  */}
-      <div className="navContainer ">
-        <h1>nav bar from "RootPage" </h1>
-        <h1>nav bar from "RootPage"</h1>
-        <h1>nav bar from "RootPage"</h1>
-      </div>
+      <Navbar />
       {/* nav container ends  */}
 
       {/* children components starts  */}
@@ -19,8 +17,7 @@ const RootPage = () => {
 
       {/* footer container starts  */}
       <div className="footerContainer">
-        <h1>footer from "RootPage"</h1>
-        <h1>footer from "RootPage"</h1>
+        <h1>footer</h1>
       </div>
       {/* footer container ends  */}
     </div>

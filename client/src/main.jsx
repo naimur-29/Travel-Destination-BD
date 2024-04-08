@@ -5,7 +5,7 @@ import { StateContextProvider } from "./Context/StateContext";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RouterProvider } from "react-router-dom";
 import { PageRoutes } from "./Router/PageRouter";
-import "./index.css";
+import "./index.scss";
 
 const queryClient = new QueryClient();
 
