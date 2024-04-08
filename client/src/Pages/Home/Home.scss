@@ -1,0 +1,72 @@
+@import "../../variables";
+
+.home-page-container {
+  min-height: 200vh;
+  display: flex;
+  justify-content: center;
+
+  .bg-video-container {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+    overflow-x: hidden;
+
+    video {
+      object-position: center;
+      object-fit: cover;
+      height: 100%;
+      max-height: 280px;
+      width: 100vw;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $primary-bg-blue;
+      opacity: 0.6;
+    }
+  }
+
+  .inner-container {
+    width: 100%;
+    max-width: 1160px;
+    padding: 100px 24px 60px 24px;
+    color: #fff;
+
+    .title {
+      font-size: 2.4rem;
+      font-weight: 400;
+      margin-bottom: 10px;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 37px;
+    }
+
+    .exclusive-offers-container {
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 8px 12px;
+      box-shadow: 0px 14px 40px rgba(0, 0, 0, 0.15);
+      height: 270px;
+
+      .title {
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #121212;
+      }
+    }
+  }
+}
