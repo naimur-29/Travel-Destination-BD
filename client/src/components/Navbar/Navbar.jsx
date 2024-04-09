@@ -1,15 +1,13 @@
 import "./Navbar.scss";
 
+import Logo from "../../assets/logo.webp";
+
 export default function Navbar() {
   return (
     <section className="navbar-container">
       <div className="inner-container">
         <div className="left">
-          <img
-            src="https://www.traveldestination.com.bd/images/main_logo.png"
-            alt=""
-            className="logo"
-          />
+          <img src={Logo} alt="" className="logo" />
         </div>
         <div className="right">
           <ul className="menu-container">
