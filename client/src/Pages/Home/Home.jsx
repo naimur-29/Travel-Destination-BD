@@ -5,20 +5,12 @@ import { Plane, Hotel, ScrollText, Luggage, TentTree } from "lucide-react";
 import "./Home.scss";
 
 import TravelMenuFlight from "../../Components/TravelMenuFlight/TravelMenuFlight";
-import { UseStateContext } from "../../Context/StateContext";
-import { UseAuth } from "../../Context/AuthContext";
 
 import homeBgVideo from "../../assets/home-bg.mp4";
 
 const Home = () => {
   // states:
   const [selectedTravelMenu, setSelectedTravelMenu] = useState("Flight");
-
-  const { test } = UseStateContext();
-  const { user } = UseAuth();
-
-  // console.log(test);
-  // console.log(user);
 
   // inner components:
   const FlightMenuItem = ({ context, icon }) => (

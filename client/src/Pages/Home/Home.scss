@@ -1,7 +1,6 @@
 @import "../../variables";
 
 .home-page-container {
-  min-height: 200vh;
   display: flex;
   justify-content: center;
 
@@ -56,12 +55,12 @@
     }
 
     .travel-form-container {
+      min-height: 270px;
       background-color: #fff;
       color: $primary-bg-blue;
       border-radius: 4px;
       padding: 8px 12px;
       box-shadow: 0px 14px 40px rgba(0, 0, 0, 0.15);
-      height: 270px;
 
       .menu-container {
         background-color: #f5f6fa;
