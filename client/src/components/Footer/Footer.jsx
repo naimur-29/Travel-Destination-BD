@@ -21,6 +21,21 @@ const aboutContent = [
   },
 ];
 
+const helpContent = [
+  {
+    link: "/",
+    content: "FAQS",
+  },
+  {
+    link: "/",
+    content: "Payment Methods",
+  },
+  {
+    link: "/",
+    content: "Contact Us",
+  },
+];
+
 const Footer = () => {
   return (
     <div className="footerContainer">
@@ -45,19 +60,19 @@ const Footer = () => {
 
           {/* icon container starts  */}
           <div className="iconContainer">
-            <Link>
+            <Link className="icon">
               <FaFacebookF />
             </Link>
 
-            <Link>
+            <Link className="icon">
               <FaInstagram />
             </Link>
 
-            <Link>
+            <Link className="icon">
               <FaLinkedinIn />
             </Link>
 
-            <Link>
+            <Link className="icon">
               <FaXTwitter />
             </Link>
           </div>
@@ -83,25 +98,50 @@ const Footer = () => {
 
         {/* help section starts  */}
         <div className="helpSection">
-          <h1>helkp section </h1>
-          <h1>helkp section </h1>
-          <h1>helkp section </h1>
+          <h1 className="helpHeader">Help</h1>
+
+          <div className="helpContent">
+            {helpContent?.map((content, ind) => (
+              <Link className="aboutContentList" key={ind} to={content?.link}>
+                <p>{content?.content} </p>
+              </Link>
+            ))}
+          </div>
         </div>
         {/* help section ends */}
 
         {/* have question section starts  */}
         <div className="haveQuestiuons">
-          <h1>have question </h1>
-          <h1>have question </h1>
-          <h1>have question </h1>
+          <h1 className="questionHeader">Have Question?</h1>
+
+          <div className="questionBody">
+            <p> +880 191111111</p>
+            <p>traveldestinationbd@gmail.com</p>
+          </div>
+
+          <div className="customerSecviceSection">
+            <h1 className="customerSupportHeading">
+              Dedicated Customer Support
+            </h1>
+            <div className="officeTime">
+              <p>Sat-Thurs: 9AM-9PM</p>
+              <p>Friday/Govt. Holidays: 10AM-6PM</p>
+            </div>
+          </div>
         </div>
         {/* have question section ends */}
 
         {/* accept payment icon starts  */}
         <div className="acceptPaymentIcon">
-          <h1>accept payment icon</h1>
-          <h1>accept payment icon</h1>
-          <h1>accept payment icon</h1>
+          <h1 className="questionHeader">Accepted Payments</h1>
+
+          <div className="paymentMethodContainer">
+            <img
+              className="paymentImg"
+              src="https://i.ibb.co/SPTQ3QS/bank-logo-a775fd7b-ezgif-com-webp-to-jpg-converter.jpg"
+              alt=""
+            />
+          </div>
         </div>
         {/* accept payment icon ends  */}
       </div>
