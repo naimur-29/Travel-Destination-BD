@@ -95,46 +95,6 @@
           }
         }
       }
-
-      .tour-type-container {
-        color: $secondary-font-gray;
-        font-size: 1.15rem;
-        font-weight: 600;
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        cursor: pointer;
-        user-select: none;
-
-        .tour-type-item {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 4px;
-
-          input[type="radio"] {
-            translate: 0 2px;
-            cursor: pointer;
-
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            width: 16px;
-            height: 16px;
-            border: 2px solid $primary-bg-orange;
-            will-change: border;
-
-            &:checked {
-              border: 5px solid $primary-bg-orange;
-            }
-          }
-
-          label {
-            cursor: pointer;
-          }
-        }
-      }
     }
   }
 }

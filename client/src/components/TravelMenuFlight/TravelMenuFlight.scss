@@ -1,0 +1,40 @@
+@import "../../variables";
+
+.tour-type-container {
+  color: $secondary-font-gray;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  user-select: none;
+
+  .tour-type-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    input[type="radio"] {
+      cursor: pointer;
+
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 16px;
+      height: 16px;
+      border: 2px solid $primary-bg-orange77;
+      will-change: border;
+
+      &:checked {
+        border: 5px solid $primary-bg-orange;
+      }
+    }
+
+    label {
+      cursor: pointer;
+    }
+  }
+}

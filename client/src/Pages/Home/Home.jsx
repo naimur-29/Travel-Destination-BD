@@ -4,6 +4,7 @@ import { Plane, Hotel, ScrollText, Luggage, TentTree } from "lucide-react";
 
 import "./Home.scss";
 
+import TravelMenuFlight from "../../Components/TravelMenuFlight/TravelMenuFlight";
 import { UseStateContext } from "../../Context/StateContext";
 import { UseAuth } from "../../Context/AuthContext";
 
@@ -12,7 +13,6 @@ import homeBgVideo from "../../assets/home-bg.mp4";
 const Home = () => {
   // states:
   const [selectedTravelMenu, setSelectedTravelMenu] = useState("Flight");
-  const [tourType, setTourType] = useState("One Way");
 
   const { test } = UseStateContext();
   const { user } = UseAuth();
@@ -31,19 +31,6 @@ const Home = () => {
       {icon}
       {context}
     </li>
-  );
-
-  const TourTypeItem = ({ context }) => (
-    <div className="tour-type-item">
-      <input
-        type="radio"
-        name="TripType"
-        id={context.split(" ")[0]}
-        onChange={() => setTourType(context)}
-        checked={tourType === context}
-      />
-      <label htmlFor={context.split(" ")[0]}>{context}</label>
-    </div>
   );
 
   return (
@@ -71,15 +58,7 @@ const Home = () => {
             <FlightMenuItem context="Umrah Package" icon={<TentTree />} />
           </ul>
 
-          {selectedTravelMenu !== "Flight" ? (
-            <></>
-          ) : (
-            <div className="tour-type-container">
-              <TourTypeItem context="One Way" />
-              <TourTypeItem context="Round Trip" />
-              <TourTypeItem context="Multi City" />
-            </div>
-          )}
+          {selectedTravelMenu !== "Flight" ? <></> : <TravelMenuFlight />}
         </div>
       </div>
     </section>
