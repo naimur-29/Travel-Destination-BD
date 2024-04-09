@@ -17,8 +17,8 @@ const Home = () => {
   const { test } = UseStateContext();
   const { user } = UseAuth();
 
-  console.log(test);
-  console.log(user);
+  // console.log(test);
+  // console.log(user);
 
   // inner components:
   const FlightMenuItem = ({ context, icon }) => (
