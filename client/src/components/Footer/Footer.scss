@@ -1,20 +1,27 @@
 @import "../../variables.scss";
 
+@mixin footerHeader {
+  font-weight: 650;
+  font-size: 1.4rem;
+  color: rgb(47, 45, 45);
+  margin-bottom: 0.6rem;
+}
+
+.footerContainer {
+  background-color: rgb(249, 246, 246);
+  padding: 3rem 0;
+}
 .footerWrapper {
-  background-color: red;
   width: 85%;
   margin: auto;
   display: flex;
-
   flex-wrap: wrap;
   column-gap: 0.6rem;
   row-gap: 1.8rem;
   justify-content: space-evenly;
-  align-items: center;
 
   //   adddress section css starts
   .addressSection {
-    background-color: rgb(111, 149, 253);
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -29,7 +36,6 @@
     }
 
     .addressBody {
-      background-color: orange;
       font-size: 0.9rem;
     }
 
@@ -45,8 +51,22 @@
 
   //   about section css starts
   .aboutSection {
-    background-color: rgb(213, 193, 92);
     width: 20%;
+
+    .aboutHeader {
+      @include footerHeader;
+    }
+
+    .aboutContent {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.4rem;
+
+      .aboutContentList {
+        list-style: none;
+        text-decoration: none;
+      }
+    }
   }
   //   about section css starts
 

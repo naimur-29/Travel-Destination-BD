@@ -6,6 +6,21 @@ import { Link } from "react-router-dom";
 
 import Logo from "../../assets/logo.webp";
 
+const aboutContent = [
+  {
+    link: "/",
+    content: "About Flight Expert",
+  },
+  {
+    link: "/",
+    content: "Terms and Conditions",
+  },
+  {
+    link: "/",
+    content: "Privacy Policy",
+  },
+];
+
 const Footer = () => {
   return (
     <div className="footerContainer">
@@ -54,9 +69,15 @@ const Footer = () => {
 
         {/* about section starts  */}
         <div className="aboutSection">
-          <h1>aboutr section</h1>
-          <h1>aboutr section</h1>
-          <h1>aboutr section</h1>
+          <h1 className="aboutHeader">About</h1>
+
+          <div className="aboutContent">
+            {aboutContent?.map((content, ind) => (
+              <Link className="aboutContentList" key={ind} to={content?.link}>
+                <p>{content?.content} </p>
+              </Link>
+            ))}
+          </div>
         </div>
         {/* about section ends  */}
 
