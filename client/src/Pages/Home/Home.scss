@@ -55,17 +55,85 @@
       margin-bottom: 37px;
     }
 
-    .exclusive-offers-container {
+    .travel-form-container {
       background-color: #fff;
+      color: $primary-bg-blue;
       border-radius: 4px;
       padding: 8px 12px;
       box-shadow: 0px 14px 40px rgba(0, 0, 0, 0.15);
       height: 270px;
 
-      .title {
-        font-size: 1.7rem;
+      .menu-container {
+        background-color: #f5f6fa;
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 7px;
+        border-radius: 4px;
+        cursor: pointer;
+        user-select: none;
+
+        .menu-item {
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 12px;
+          border-radius: 4px;
+          border: 2px solid transparent;
+          will-change: border-color, box-shadow;
+          transition: border-color, box-shadow 150ms linear;
+
+          &:hover:not(.active) {
+            border-color: $primary-bg-orange33;
+            box-shadow: 0px 1px 4px $primary-bg-orange33;
+          }
+
+          &.active {
+            background-color: $primary-bg-orange33;
+          }
+        }
+      }
+
+      .tour-type-container {
+        color: $secondary-font-gray;
+        font-size: 1.15rem;
         font-weight: 600;
-        color: $primary-bg-blue;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+        user-select: none;
+
+        .tour-type-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 4px;
+
+          input[type="radio"] {
+            translate: 0 2px;
+            cursor: pointer;
+
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 2px solid $primary-bg-orange;
+            will-change: border;
+
+            &:checked {
+              border: 5px solid $primary-bg-orange;
+            }
+          }
+
+          label {
+            cursor: pointer;
+          }
+        }
       }
     }
   }
