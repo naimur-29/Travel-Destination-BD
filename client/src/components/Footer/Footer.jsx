@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.scss";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -9,7 +8,7 @@ import Logo from "../../assets/logo.webp";
 const aboutContent = [
   {
     link: "/",
-    content: "About Flight Expert",
+    content: "About Travel Destination BD",
   },
   {
     link: "/",
