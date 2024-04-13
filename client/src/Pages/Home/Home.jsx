@@ -8,6 +8,7 @@ import TravelMenuFlight from "../../Components/TravelMenuFlight/TravelMenuFlight
 
 import homeBgVideo from "../../assets/home-bg.mp4";
 import PackageCard from "../../Components/PackagesComponent/PackageCard";
+import Service from "../../Components/Service/Service";
 
 const Home = () => {
   // states:
@@ -58,25 +59,32 @@ const Home = () => {
       </section>
 
       {/* package section starts  */}
-      <div className="packages  py-8 w-[80%] m-auto   ">
-        <h1 className=" text-4xl text-center font-semibold mb-10 ">
-          <span className=" text-[#f26622] ">Our</span> Packages{" "}
-        </h1>
+      <div className="packageContainer   py-10  ">
+        <div className="packages  w-[80%] m-auto   ">
+          <h1 className=" text-4xl text-center font-semibold mb-14 ">
+            <span className=" text-[#f26622] ">Our</span> Packages
+          </h1>
 
-        <div className="packageCardContainer  grid grid-cols-2 gap-x-12 ">
-          {/* card starts  */}
-          <PackageCard
-            packageHeader={"Domestic"}
-            imgUrl="https://i.ibb.co/zryT971/pexels-rushow-khan-122107.jpg"
-          />
-          <PackageCard
-            packageHeader={"International"}
-            imgUrl="https://i.ibb.co/rwSSsqB/pexels-nextvoyage-1470502.jpg"
-          />
-          {/* card ends  */}
+          <div className="packageCardContainer  grid grid-cols-2 gap-x-12 ">
+            {/* card starts  */}
+            <PackageCard
+              packageHeader={"Domestic"}
+              imgUrl="https://i.ibb.co/zryT971/pexels-rushow-khan-122107.jpg"
+            />
+            <PackageCard
+              packageHeader={"International"}
+              imgUrl="https://i.ibb.co/rwSSsqB/pexels-nextvoyage-1470502.jpg"
+            />
+            {/* card ends  */}
+          </div>
         </div>
       </div>
+
       {/* package section ends  */}
+
+      {/* services section starts  */}
+      <Service />
+      {/* services section ends  */}
     </div>
   );
 };
