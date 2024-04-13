@@ -9,6 +9,7 @@ import TravelMenuFlight from "../../Components/TravelMenuFlight/TravelMenuFlight
 import homeBgVideo from "../../assets/home-bg.mp4";
 import PackageCard from "../../Components/PackagesComponent/PackageCard";
 import Service from "../../Components/Service/Service";
+import AboutUs from "../../Components/AboutUs/AboutUs";
 
 const Home = () => {
   // states:
@@ -85,6 +86,10 @@ const Home = () => {
       {/* services section starts  */}
       <Service />
       {/* services section ends  */}
+
+      {/* about us section starts  */}
+      <AboutUs />
+      {/* about us section ends  */}
     </div>
   );
 };
