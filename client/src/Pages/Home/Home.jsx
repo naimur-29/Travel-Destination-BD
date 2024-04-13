@@ -36,7 +36,7 @@ const Home = () => {
 
       <div className="inner-container">
         <h1 className="title">
-          Welcome to <span>Travel Destination!</span>
+          Welcome to <span>Travel Destination BD!</span>
         </h1>
 
         <h2 className="subtitle">Find Flights, Hotels, Visa & Holidays</h2>

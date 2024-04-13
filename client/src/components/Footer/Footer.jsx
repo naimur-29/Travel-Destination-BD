@@ -1,5 +1,5 @@
-import React from "react";
 import "./Footer.scss";
+
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ import Logo from "../../assets/logo.webp";
 const aboutContent = [
   {
     link: "/",
-    content: "About Flight Expert",
+    content: "About Us",
   },
   {
     link: "/",
@@ -22,10 +22,6 @@ const aboutContent = [
 ];
 
 const helpContent = [
-  {
-    link: "/",
-    content: "FAQS",
-  },
   {
     link: "/",
     content: "Payment Methods",
@@ -124,8 +120,8 @@ const Footer = () => {
               Dedicated Customer Support
             </h1>
             <div className="officeTime">
-              <p>Sat-Thurs: 9AM-9PM</p>
-              <p>Friday/Govt. Holidays: 10AM-6PM</p>
+              <p> Office time Sat-Thurs: 10:00 AM- 07:00 PM</p>
+              <p> Reservation central (24/7) : +880 1967-686863</p>
             </div>
           </div>
         </div>

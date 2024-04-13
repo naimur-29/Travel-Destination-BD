@@ -11,10 +11,10 @@ export default function Navbar() {
         </div>
         <div className="right">
           <ul className="menu-container">
-            <li className="menu-item">Flight</li>
-            <li className="menu-item">Hotel</li>
+            <li className="menu-item">Home</li>
             <li className="menu-item">Visa</li>
-            <li className="menu-item">Holiday</li>
+            <li className="menu-item">About</li>
+            <li className="menu-item">Contact</li>
           </ul>
         </div>
       </div>

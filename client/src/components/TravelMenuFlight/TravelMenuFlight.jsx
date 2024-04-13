@@ -78,7 +78,7 @@ export default function TravelMenuFlight() {
         </div>
 
         <div className="form-item">
-          <label>{"Infants (0-2 Yrs)"}</label>
+          <label>{"Infants"}</label>
           <input type="number" defaultValue={0} min={0} required />
         </div>
 
