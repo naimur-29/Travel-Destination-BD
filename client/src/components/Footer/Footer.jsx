@@ -13,7 +13,7 @@ const aboutContent = [
   },
   {
     link: "/",
-    content: "Terms and Conditions",
+    content: "Best Price Guarantee",
   },
   {
     link: "/",
@@ -111,13 +111,13 @@ const Footer = () => {
           <h1 className="questionHeader">Have Question?</h1>
 
           <div className="questionBody">
-            <p> +880 191111111</p>
-            <p>traveldestinationbd@gmail.com</p>
+            <p> +880 1967-686862 (WhatsApp Number) </p>
+            <p>officetraveldestinationbd@gmail.com</p>
           </div>
 
           <div className="customerSecviceSection">
             <h1 className="customerSupportHeading">
-              Dedicated Customer Support
+              Dedicated Customer Support :
             </h1>
             <div className="officeTime">
               <p> Office time Sat-Thurs: 10:00 AM- 07:00 PM</p>
